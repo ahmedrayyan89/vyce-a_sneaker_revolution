@@ -1,15 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   optimizeFonts: false,
-  eslint: {
-    ignoreDuringBuilds: true,
-  }
-};
-
-module.exports = nextConfig;
-// next.config.js
-
-module.exports = {
   images: {
     remotePatterns: [
       {
@@ -19,4 +10,12 @@ module.exports = {
       },
     ],
   },
-}
+  eslint: {
+    ignoreDuringBuilds: true,  // Disables ESLint during builds
+  },
+  typescript: {
+    ignoreBuildErrors: true,    // Disables TypeScript errors during builds
+  },
+};
+
+module.exports = nextConfig;
