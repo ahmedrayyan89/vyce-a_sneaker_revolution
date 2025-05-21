@@ -10,6 +10,8 @@ import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/ui/container";
 import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
+import UpcomingDropsSection from '@/components/sections/UpcomingDropsSection'
+
 
 export default function UpcomingPage() {
   const [emailSubmitted, setEmailSubmitted] = useState(false);
